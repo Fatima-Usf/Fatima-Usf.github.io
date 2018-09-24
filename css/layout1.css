@@ -67,4 +67,10 @@ img {
 
 .logos-pics figure {
   margin-bottom: 20px;
-  position: relative; }
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out; }
+  .logos-pics figure.show {
+    opacity: 1;
+    transform: translateX(0px); }
