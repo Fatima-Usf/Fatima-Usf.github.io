@@ -6,7 +6,7 @@ body
    
 h1
     margin-top: 5%
-    color: #646161
+    color: #597207
     weight: 300
     font-size: 30px
 
@@ -84,15 +84,31 @@ img
         opacity: 0
         transform: translateX(-20px)
         transition: all 0.3s ease-in-out
+        overflow: hidden
 
         &.show
             opacity: 1
             transform: translateX(0px)
+        img
+            display: block
+        &:hover
+            figcaption
+                left: 0%
+
+    figcaption 
+        color: white
+        position: absolute
+        bottom: 12px
+        left: -200px
+        background: #89A628
+        padding: 2px 7px
+        font-size: 13px
+        transition: all 0.3s ease-in-out
 
 .back-two
     height: 640px
     background: 
-        image: url(../images/back3.jpg)
+        image: url(../images/back.jpg)
         size: auto 640px
         position: top center
         repeat: no-repeat
