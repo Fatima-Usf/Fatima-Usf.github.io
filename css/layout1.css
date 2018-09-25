@@ -71,7 +71,8 @@ img {
   opacity: 0;
   transform: translateX(-20px);
   transition: all 0.3s ease-in-out;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
   .logos-pics figure.show {
     opacity: 1;
     transform: translateX(0px); }
