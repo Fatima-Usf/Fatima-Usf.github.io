@@ -74,3 +74,13 @@ img {
   .logos-pics figure.show {
     opacity: 1;
     transform: translateX(0px); }
+
+.back-two {
+  height: 640px;
+  background-image: url(../images/back3.jpg);
+  background-size: auto 640px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 100px;
+  border-radius: 50%; }
