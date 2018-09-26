@@ -19,12 +19,18 @@ $(window).scroll(function(){
             setTimeout(function(){
                 // ne fais rien pour un moment ensuite pour la figure i ajoute la classe show que je vais faire son style
                 $('.logos-pics figure').eq(i).addClass('show'); 
-            }, 150 *(i+1));
+            }, 170 *(i+1));
            
         });
     }
 
     }
     
-    
+    if(scroll > $('.back-two').offset().top -$(window).height()){
+        $('.back-two').css({ 'background-position': 'center' + (scroll - $('.back-two').offset().top) +'px'})
+        
+        var opacity = (scroll - $('.back-two').offset().top +400 ) / (scroll /5 )
+
+        $('.love').css({'opacity': opacity})
+    }
 })
