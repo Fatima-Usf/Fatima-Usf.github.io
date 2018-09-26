@@ -126,9 +126,8 @@ img {
     display: block;
     font-size: 30px; }
   .text span {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 45px;
-    font-style: italic;
     color: rgba(255, 255, 255, 0.6); }
   .text .contact {
     font-size: 20px;
