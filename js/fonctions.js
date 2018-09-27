@@ -2,7 +2,7 @@ $(window).scroll(function(){
 
     var scroll = $(this).scrollTop();
     if (scroll/2) {
-        $('.al').css({
+        $('h2').css({
             'transform': 'skewY(180deg)',
             'transition': 'transform 2s'
         })
