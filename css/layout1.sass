@@ -30,7 +30,12 @@ h2
 figure 
     margin: auto
 
-.content 
+.content
+    position: relative
+    z-index: 2
+    background: #EFEFEF
+    margin-bottom: 400px
+
     article
         padding: 100px 0
         max-width: 750px
@@ -51,6 +56,7 @@ img
         attachment: fixed
         repeat: no-repeat
     overflow: hidden
+    z-index: 3
     h1
         text-align: center
         font-weight: 100
@@ -197,3 +203,23 @@ img
 
     .post3
         transform: translate(-100px, 20px)
+
+
+footer
+    background: #89A628
+    color: white
+    padding: 40px 0
+    position: fixed
+    bottom: 0
+    width: 100%
+    
+
+    .footer-stuff
+        max-width: 990px
+        margin: 0 auto
+    
+    a
+        color: white
+        text-decoration: none
+    
+        

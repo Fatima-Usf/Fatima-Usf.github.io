@@ -26,11 +26,16 @@ h2 {
 figure {
   margin: auto; }
 
-.content article {
-  padding: 100px 0;
-  max-width: 750px;
-  margin: 0 auto;
-  text-align: center; }
+.content {
+  position: relative;
+  z-index: 2;
+  background: #EFEFEF;
+  margin-bottom: 400px; }
+  .content article {
+    padding: 100px 0;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center; }
 
 img {
   max-width: 100%; }
@@ -44,7 +49,8 @@ img {
   background-position: top center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 3; }
   .back-first h1 {
     text-align: center;
     font-weight: 100;
@@ -168,3 +174,17 @@ img {
     z-index: 2; }
   .blogs .post3 {
     transform: translate(-100px, 20px); }
+
+footer {
+  background: #89A628;
+  color: white;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  footer .footer-stuff {
+    max-width: 990px;
+    margin: 0 auto; }
+  footer a {
+    color: white;
+    text-decoration: none; }
