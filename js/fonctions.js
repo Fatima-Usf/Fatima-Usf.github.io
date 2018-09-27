@@ -33,4 +33,11 @@ $(window).scroll(function(){
 
         $('.love').css({'opacity': opacity})
     }
+
+    if (scroll > $('.blogs').offset().top - $(window).height()) {
+        var offset = Math.min(0, scroll - $('.blogs').offset().top +$(window).height()-360);
+
+        $('.post1').css({'transform':'translate('+ offset +'px, 20px)' });
+        $('.post3').css({ 'transform': 'translate(' + Math.abs(offset) + 'px, 20px)' });
+    }
 })

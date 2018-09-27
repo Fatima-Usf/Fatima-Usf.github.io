@@ -139,3 +139,17 @@ img {
     .text .contact:hover {
       background: white;
       color: black; }
+
+.blogs {
+  margin-top: 100px; }
+  .blogs .post {
+    border: 1px solid #e1e1e1;
+    padding: 20px 20px 0;
+    background: white;
+    position: relative; }
+  .blogs .post1 {
+    transform: translate(100px, 20px); }
+  .blogs .post2 {
+    z-index: 2; }
+  .blogs .post3 {
+    transform: translate(-100px, 20px); }
