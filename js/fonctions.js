@@ -33,6 +33,7 @@ $(document).ready(function () {
             var opacity = (scroll - $('.back-two').offset().top +400 ) / (scroll /5 )
 
             $('.love').css({'opacity': opacity})
+            $('footer').css({ 'position': 'fixed' });
         }
 
         if (scroll > $('.blogs').offset().top - $(window).height()) {
@@ -40,7 +41,11 @@ $(document).ready(function () {
 
             $('.post1').css({'transform':'translate('+ offset +'px, 20px)' });
             $('.post3').css({ 'transform': 'translate(' + Math.abs(offset) + 'px, 20px)' });
+
         }
+        
+       
+
     })
 
 });
