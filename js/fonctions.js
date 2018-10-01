@@ -1,54 +1,41 @@
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener('scroll', function (event) {
+    var scroll = window.pageYOffset;
+    var h2Element = document.querySelector('h2');
+    var logoPictures = document.querySelector('.logos-pics');
+    var backTo = document.querySelector('.back-two');
+    var footer = document.querySelector('footer');
+    var blogs = document.querySelector('.blogs');
 
-$(document).ready(function () {
-    $(window).scroll(function(){
+    if (scroll / 2) {
+      h2Element.style.transform = 'skewY(180deg)';
+      h2Element.style.transition = 'transform 2s';
 
-        var scroll = $(this).scrollTop();
-        if (scroll/2) {
-            $('h2').css({
-                'transform': 'skewY(180deg)',
-                'transition': 'transform 2s'
-            })
-        /*   $('.logo').css({
-                'transform': 'translate(-200px, 0px)',
-                'transition': 'transform 2s'
-            })
-        */
-        /** si le scroll de la feneitre est plus grand que le débaut des images en haut */
-        if (scroll > $('.logos-pics').offset().top -($(window).height() / 1.2)) { //pour ne pas pas trop attendre je vais soustraire la moitié de la page sur n'importe quel navigateur
-            //selectionné chaque figure(contient une photo) individuellement 
-            $('.logos-pics figure').each(function(i){
-                
-                setTimeout(function(){
-                    // ne fais rien pour un moment ensuite pour la figure i ajoute la classe show que je vais faire son style
-                    $('.logos-pics figure').eq(i).addClass('show'); 
-                }, 170 *(i+1));
-            
-            });
-        }
-        }
-        
-        if(scroll > $('.back-two').offset().top -$(window).height()){
-            $('.back-two').css({ 'background-position': 'center' + (scroll - $('.back-two').offset().top) +'px'})
-            
-            var opacity = (scroll - $('.back-two').offset().top +400 ) / (scroll /5 )
-             console.log( scroll )
-            $('.love').css({'opacity': opacity})
-            $('footer').css({ 'position': 'fixed' });
-        } else if (scroll < $('.back-two').offset().top - $(window).height()) {
-            $('footer').css({ 'position': 'relative' });  }
+      if (scroll > logoPictures.getBoundingClientRect().top - (window.innerHeight / 1.2)) {
+        document.querySelectorAll('.logos-pics figure').forEach(function (elm, index) {
+          setTimeout(function () {
+            elm.classList.add('show');
+          }, 170 * (index + 1));
+        });
+      }
+    }
+
+    if (scroll > backTo.getBoundingClientRect().top - window.innerHeight) {
+      backTo.style.backgroundPosition = 'center ' + (scroll - backTo.getBoundingClientRect().top) + 'px';
+
+      var opacity = (scroll - backTo.getBoundingClientRect().top + 400) / (scroll / 5);
+      document.querySelector('.love').style.opacity = opacity;
+      footer.style.position = 'fixed';
+    } else if (scroll < backTo.getBoundingClientRect().top - window.innerHeight) {
+      footer.style.position = 'relative';
+    }
 
 
-        if (scroll > $('.blogs').offset().top - $(window).height()) {
-            var offset = Math.min(0, scroll - $('.blogs').offset().top +$(window).height()-360);
-
-            $('.post1').css({'transform':'translate('+ offset +'px, 20px)' });
-            $('.post3').css({ 'transform': 'translate(' + Math.abs(offset) + 'px, 20px)' });
-
-        }
-      
-        
-       
-
-    })
+    if (scroll > blogs.getBoundingClientRect().top - window.innerHeight) {
+      var offset = Math.min(0, scroll - blogs.getBoundingClientRect().top + window.innerHeight - 360);
+      document.querySelector('.post1').style.transform = 'translate(' + offset + 'px, 20px)';
+      document.querySelector('.post3').style.transform = 'translate(' + Math.abs(offset) + 'px, 20px)'
+    }
+  });
 
 });
