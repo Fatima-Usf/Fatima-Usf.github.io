@@ -39,7 +39,7 @@ $(document).ready(function () {
 
 
         if (scroll > $('.blogs').offset().top - $(window).height()) {
-            var offset = Math.min(0, scroll - $('.blogs').offset().top +$(window).height()-360);
+            var offset = Math.min(0, scroll - $('.blogs').offset().top +$(window).height()-300);
 
             $('.post1').css({'transform':'translate('+ offset +'px, 20px)' });
             $('.post3').css({ 'transform': 'translate(' + Math.abs(offset) + 'px, 20px)' });
@@ -52,3 +52,23 @@ $(document).ready(function () {
     })
 
 });
+
+var myText = "Hello there..";
+
+var myArray = myText.split("");
+
+
+var timeboucle;
+function loop() {
+
+
+  if (myArray.length > 0) {
+    document.getElementById("container").innerHTML += myArray.shift();
+
+  } else {
+    clearTimeout(timeboucle);
+  }
+  timeboucle = setTimeout('loop()', 90);
+
+}
+loop();
