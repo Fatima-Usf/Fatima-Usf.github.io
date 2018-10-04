@@ -394,7 +394,7 @@ footer {
 
   .back-first {
     background-image: url(../images/back3.jpg);
-    background-size: 100%;
+    background-size: auto 800px;
     background-position: top center;
     padding-bottom: 0%; }
 
@@ -402,4 +402,7 @@ footer {
     display: none; }
 
   .content {
-    padding-top: 0px; } }
+    padding-top: 0px; }
+
+  .post1 {
+    transform: translate(0px, 0px); } }
