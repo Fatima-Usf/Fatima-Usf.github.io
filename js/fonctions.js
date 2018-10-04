@@ -29,7 +29,7 @@ $(document).ready(function () {
         } else if (scroll < $('.back-two').offset().top - $(window).height()) {
             $('footer').css({ 'position': 'relative' });  }
 
-        if (showidth > 864) {
+        if (showidth > 640) {
             /** si le scroll de la feneitre est plus grand que le débaut des images en haut */
             if (scroll > $('.logos-pics').offset().top - ($(window).height() / 1.2)) { //pour ne pas pas trop attendre je vais soustraire la moitié de la page sur n'importe quel navigateur
                 //selectionné chaque figure(contient une photo) individuellement 
