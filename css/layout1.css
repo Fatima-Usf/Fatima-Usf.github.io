@@ -18,7 +18,7 @@ body {
 
 nav {
   padding: 8px;
-  background-color: rgba(24, 135, 36, 0.22); }
+  background-color: rgba(147, 175, 39, 0.26); }
 
 .logo {
   float: left;
@@ -383,10 +383,22 @@ footer {
     opacity: 0; }
 
   h1#container {
-    font-size: 18px; }
+    font-size: 23px; }
 
   h2 {
-    display: none; }
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 1.8;
+    margin-left: 12%; }
+    h2 em {
+      margin-left: 5%;
+      font-size: 20px; }
+    h2 space {
+      margin-left: 32%;
+      margin-top: -30%; }
+    h2 span {
+      margin-left: 0%;
+      font-size: 23px; }
 
   h1 {
     margin-top: 0%;
@@ -412,4 +424,15 @@ footer {
   .blogs .post1 {
     transform: none; }
   .blogs .post3 {
-    transform: none; } }
+    transform: none; }
+
+  .back-two {
+    height: 320px; }
+
+  .logo {
+    margin-top: -14px;
+    margin-left: 4px; }
+
+  .logo a {
+    font-weight: 600;
+    font-size: 14px; } }
