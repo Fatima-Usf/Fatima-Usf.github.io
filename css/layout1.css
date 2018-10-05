@@ -387,9 +387,9 @@ footer {
 
   h2 {
     font-weight: 100;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.8;
-    margin-left: 12%; }
+    margin-left: 18%; }
     h2 em {
       margin-left: 5%;
       font-size: 20px; }
@@ -430,7 +430,7 @@ footer {
     height: 320px; }
 
   .logo {
-    margin-top: -14px;
+    margin-top: -10px;
     margin-left: 4px; }
 
   .logo a {
