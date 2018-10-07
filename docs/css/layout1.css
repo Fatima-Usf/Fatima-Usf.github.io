@@ -100,7 +100,8 @@ figure {
     padding: 100px 0;
     max-width: 750px;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    justify-content: center; }
 
 img {
   max-width: 100%; }
@@ -260,11 +261,24 @@ footer {
   footer .footer-stuff {
     max-width: 990px;
     margin: 0 auto; }
-  footer a {
-    color: white;
-    text-decoration: none; }
-  footer li {
-    list-style: none; }
+
+#c, p {
+  text-align: center; }
+
+#l {
+  margin-left: -2%; }
+
+footer ul {
+  padding-left: 40%; }
+
+footer ul li {
+  display: inline-block;
+  margin: 9px;
+  margin-bottom: 12px;
+  float: left;
+  list-style: none; }
+  footer ul li img {
+    width: 35px; }
 
 .hidden {
   display: none;
@@ -435,4 +449,10 @@ footer {
 
   .logo a {
     font-weight: 600;
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  footer ul {
+    padding-left: 10%; }
+
+  #c {
+    font-size: 12px; } }
