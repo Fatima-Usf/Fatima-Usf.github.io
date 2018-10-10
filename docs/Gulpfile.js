@@ -4,7 +4,7 @@ var pug = require('gulp-pug');
 gulp.task('pug',function(){
     gulp.src('src/pug/*.pug')
         .pipe(pug())
-        .pipe(gulp.dest('www'));
+        .pipe(gulp.dest(''));
 });
 
 gulp.task('watch',function(){
