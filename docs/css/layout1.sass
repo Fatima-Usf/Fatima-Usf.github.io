@@ -96,6 +96,12 @@ h2
 
 figure 
     margin: auto
+    img
+        max-width: 100%
+        max-height: 100%
+        height: 200px
+        width: 1000px
+    
 
 .content
     position: relative
@@ -110,10 +116,14 @@ figure
         margin: 0 auto
         text-align: center
         justify-content: center
+        p
+            text-align: justify
+           
         
         
 img
     max-width: 100%
+    
 .back-first
     position: relative
     height: 700px
@@ -209,7 +219,7 @@ img
         transition: all 0.3s ease-in-out
 
 .back-two
-    height: 750px
+    height: 695px
     background: 
         image: url(../images/back.jpg)
         size: auto 700px
@@ -267,10 +277,17 @@ img
     font-size: 1.1em
 .blogs
     margin-top: 100px
+    #tit
+        color: #597207
+        font-size: 1.8em
+    p
+        text-justify: none
+        a
+            color: #597207
 
     .post
         border: 2px solid #e1e1e1
-        padding: 20px 20px 0
+        padding: 10px 20px 0
         position: relative
 
     .post1
@@ -309,11 +326,86 @@ footer ul li
     list-style: none
     img
         width: 35px
+#posts
+    text-align: center
 
+.modalDialog
 
-    
-   
-   
+    position: fixed
+    font-family: Arial, Helvetica, sans-serif
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.8)
+    z-index: 99999
+    opacity: 0
+    -webkit-transition: opacity 400ms ease-in
+    -moz-transition: opacity 400ms ease-in
+    transition: opacity 400ms ease-in
+    pointer-events: none
+    &:target
+        opacity: 1
+        pointer-events: auto
+    > div
+        width: 680px
+        position: relative
+        margin: 5% auto
+        padding: 5px 20px 13px 20px
+        border-radius: 10px
+        background: #fff
+        background: -moz-linear-gradient(#AFD120, #fff)
+        background: -webkit-linear-gradient(#AFD120, #fff)
+        background: -o-linear-gradient(#AFD120, #fff)
+           
+
+        h5
+            color: #162700
+            padding-top: 5px
+        p
+            padding-top: 15px
+        a
+            color: #AFD120
+            text-decoration: none
+            font-size: 18px
+        
+
+.close
+    background: white
+    color: #FFFFFF
+    line-height: 25px
+    position: absolute
+    right: -12px
+    text-align: center
+    top: -10px
+    width: 24px
+    text-decoration: none
+    font-weight: bold
+    -webkit-border-radius: 12px
+    -moz-border-radius: 12px
+    border-radius: 12px
+    -moz-box-shadow: 1px 1px 3px #000
+    -webkit-box-shadow: 1px 1px 3px #000
+    box-shadow: 1px 1px 3px #000
+    &:hover
+        background: #89A628
+        color:  white   
+#clinic
+    >div
+        background: #fff
+        background: -moz-linear-gradient(#5EB8E4, #fff)
+        background: -webkit-linear-gradient(#5EB8E4, #fff)
+        background: -o-linear-gradient(#5EB8E4, #fff)
+        a
+            color: #199AD9
+
+    .close
+        background: white
+        color: #5EB8E4
+        &:hover
+        background: #5EB8E4
+        color:  white
+
             
 
 .hidden 
@@ -371,6 +463,7 @@ footer ul li
         letter-spacing: 1.2px
         transform: translateX(-20px)
         transition: all 0.2s ease
+        
     .nav-btn
         position: fixed
         right: 10px
@@ -458,6 +551,9 @@ footer ul li
     h1
         margin-top: 0%
         padding-top: 0%
+    article
+        p
+            margin: 28px
 
     
     

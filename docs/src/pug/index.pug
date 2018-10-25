@@ -24,10 +24,11 @@ html(lang="en")
                     a(href="#") Fatima_Usf
                 .nav-wrapper
                     ul
-                        li: a(href="#") Lorem
-                        li: a(href="#") Lorem
-                        li: a(href="#") Lorem
-                        li: a(href="#") Lorem
+                        li: a(href="#abt") About
+                        li: a(href="#exp") Experience
+                        li: a(href="#proj") Projects
+                        li: a(href="#skil") Skills
+                        
 
                 
             h1#container 
@@ -39,110 +40,168 @@ html(lang="en")
         section.content
 
             article
-                h1 About me 
+                h1#abt About me 
 
                 hr
 
 
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente totam pariatur similique fugiat voluptates quaerat, ea voluptatum, iste omnis ex nulla quam! Quos labore sequi aut recusandae doloremque dolore!
-
+                p I'm Fatima from Algeria, I'm 22 years old, passionate about Web development, I love and enjoy coding, learning and discovering new computer science technologies, Also passioante about AI. I'm self-motivated, creative and life-long learner.
                 
 
 
-                h1 Experience & Education
+                h1#exp Experience & Education
                 hr
 
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sapiente totam pariatur similique fugiat voluptates quaerat, ea voluptatum, iste omnis ex nulla quam! Quos labore sequi aut recusandae doloremque dolore!
-
+                p ➡️ Ex member of GDG Oran (Google Developer Group Oran) a group of new Techs enthusiasts. This community aims to develop creativity and multidisciplinary values besides its main field related to computer science.
+                p ➡️ Ex member of Team Open Minds Oran, a group of computer science students of Oran university, we liked to try, share, learn and work for an open-minded generation, we spread the open-source culture and we used to break the ice with new technologies.
+                p ➡️ Gradute computer science and I'm currently doing my Masters (inchaa allah) in ArtificiaI Intelligence (AI) and decision support systems at Oran University1, Ahmed Ben Bella
+            
                 
 
-                h1 My projects
+                h1#proj My projects
                 hr
 
                 .logos-pics
                     .row.img-row
-                        figure.columns.four
-                            a(href="#")
-                                img(src="images/logo3.jpg")
-                                figcaption lorem lorem - <strong> lorem </strong>                            
-
-                        figure.columns.four
-                            a(href="#")
-                            img(src="images/logo3.jpg")
-                            figcaption lorem lorem - <strong> lorem </strong>
-                        figure.columns.four
-                            a(href="#")
-                                img(src="images/logo3.jpg")
-                                figcaption lorem lorem - <strong> lorem </strong>
+                        figure.columns.six
+                            a(href="#scolarity")
+                                img(src="images/pfe6.png")
+                                figcaption Scolarity - <strong> Plateforme </strong>
+                        figure.columns.six
+                            a(href="#quran")
+                                img(src="images/quran.png")
+                                figcaption Quran.R - <strong> Index </strong>
+                        
                     .row.img-row
-                        figure.columns.four
-                            a(href="#")
-                                img(src="images/logo2.jpg")
-                                figcaption lorem lorem - <strong> lorem </strong>
-                        figure.columns.four
-                            a(href="#")
-                                img(src="images/logo2.jpg")
-                                figcaption lorem lorem - <strong> lorem </strong>
-                        figure.columns.four
-                            a(href="#")
-                                img(src="images/logo2.jpg")
-                                figcaption lorem lorem - <strong> lorem </strong>
-
+                        figure.columns.six
+                            a(href="#form")
+                                img(src="images/form.png")
+                                figcaption Form - <strong> Index </strong>
+                        figure.columns.six
+                            a(href="#myst")
+                                img(src="images/game.png")
+                                figcaption Mysterious number - <strong> game </strong>
+                      
                     .row.img-row
-                        figure.columns.four
-                            a(href="#")
-                                img(src="images/logo1.png")
-                                figcaption lorem lorem - <strong> lorem </strong>
-                        figure.columns.four
-                            a(href="#")
-                                img(src="images/logo1.png")
-                                figcaption lorem lorem - <strong> lorem </strong>
-                        figure.columns.four
-                            a(href="#")
-                                img(src="images/logo1.png")
-                                figcaption lorem lorem - <strong> lorem </strong>
+                        figure.columns.six
+                            a(href="#clinic")
+                                img(src="images/clinique.png")
+                                figcaption clinic - <strong> website </strong>
+                
+                        
+                            
+                        figure.columns.six
+                            a(href="#dash")
+                                img(src="images/dashbord.png")
+                                figcaption logos - <strong> platform </strong>
 
+                    // Modals
 
-                h1 Skills
+                    // first project: scolarity modal
+                    #scolarity.modalDialog
+                        div
+                            a(href="#close").close x
+                            h5 University scolarity service platform
+                            img(src="images/pfe6.png")
+                            p  This is my degree project. The purpose of this platform is to provide users of Scolarity service a simplification of management including the ease of performing tasks, clarity and speed while remaining secure. Coded principally with python django, html5 CSS3 and JS, used (bootstrap). The code is actullay <strong>< PRIVATE /></strong>  
+                               
+
+                    #quran.modalDialog
+                        div
+                            a(href="#close").close x
+                            h5 The front of a Quran web application
+                            img(src="images/quran1.png")
+                            p I realised the front-end of this Quran web application that allow people to listen and read Quran. I Coded with html5, scss and JS. The front code is actullay <strong> open source, </strong> avaible in my Github account.
+                                strong
+                                    a(href="https://github.com/Fatima-Usf/index-page-quran")  < See the code />                  
+                    
+                    #form.modalDialog
+                        div
+                            a(href="#close").close x
+                            h5 The front-end of this Form
+                            img(src="images/form.png")
+                            p  I designed this Form then cooded it with html5, css3 and JS. the source code is <strong> open source, </strong>avaible in my Github account.  
+                                strong
+                                    a(href="https://github.com/Fatima-Usf/Form-matrial-design-without-framework") < See the code />
+                                
+                    #myst.modalDialog
+                        div
+                            a(href="#close").close x
+                            h5  Mysterious Numbers game
+                            img(src="images/game.png")
+                            p  I designed and cooded  Mysterious Numbers game with HTML5 and CSS3 for the front-end. JS for back-end. the source code is <strong> open source, </strong>avaible in my Github account.  
+                                strong
+                                    a(href="https://github.com/Fatima-Usf/Mysterious-Numbers-game") < See the code />
+                                
+
+                            
+                    #clinic.modalDialog
+                        div
+                            a(href="#close").close x
+                            h5  Clinc website
+                            img(src="images/clinique.png")
+                            p   A representative and advertising static website for a real clinic. the source code is <strong> open source, </strong>avaible in my Github account.  
+                                strong
+                                    a(href="https://github.com/Fatima-Usf/site-clinique") < See the code />
+
+                    #dash.modalDialog
+                        div
+                            a(href="#close").close x
+                            h5  dashbord platform
+                            img(src="images/dashbord.png")
+                            p  A platform for logos designers using django, where the designer have a dashbord where he can post his logos, check his comands and see others opinion about his design, he can also give his opinion about the others designs... The client can see, comment and comand a logo. the source code is actullay <strong> < PRIVATE /> </strong>
+                                
+                
+
+                h1#skil Skills
                 hr
                 ul.skills
-                    li lorem
-                    li lorem
-                    li Lorem
-                    li Lorem
-                    li Lorem
-                    li Lorem
-                    li Lorem
-                    li Lorem
-                    li lorem
-                    li lorem
-                    li Lorem
-                    li Lorem
-                    li Lorem
-                    li Lorem
-                    li Lorem
-                    li Lorem
+                    li HTML5
+                    li CSS3
+                    li Jquery
+                    li bootstrap
+                    li Python
+                    li Django
+                    li C++
+                    li java
+                    li XML
+                    li R
+                    li javafx
+                    li openCv
+                    li UML2
+                    li AGILE
+                    li MVC
+                    li MVT
+                    li Pug
+                    li SASS 
+                    li SQL
+                    li Prolog
+                    li git/github
+                    li Project management
+                    li design
+                    li photoshop
+                    li public speaking
 
                 h1 My blog posts
                 hr
 
-                p And I also like to blog sometime about what I'm doing, learning and descroving 
+                p#posts And I also love to blog sometime about what I'm doing, learning and descroving. 
                 .blogs.row
                     .post.columns.four.post1
-                        h5 Post title
+                        h5#tit Privacy
                         img(src="images/1.jpg", alt="", srcset="")
-                        p Lorem ipsum dolor sit amet.
-                        p: a.button(href="") Read More
+                        p My first speech in public talking about mobile network security and privacy.
+                        p: a.button(href="https://medium.com/@f.ucf.eva/hello-from-algeria-ad6b2d6b228") Read More ...
                     .post.columns.four.post2
-                        h5 Post title
+                        h5#tit Pug or HTML
                         img(src="images/2.jpg", alt="", srcset="")
-                        p Lorem ipsum dolor sit amet.
-                        p: a.button(href="") Read More
+                        p I enjoy coding with that awesome pug which give me a powerful new way to write markup ❤.
+                        p: a.button(href="") Read More ...
                     .post.columns.four.post3
-                        h5 Post title
-                        img(src="images/3.jpg", alt="", srcset="")
-                        p Lorem ipsum dolor sit amet.
-                        p: a.button(href="") Read More
+                        h5#tit Girl & code
+                        img(src="images/l.jpg", alt="", srcset="")
+                        p How do girls find coding? Do they enjoy it? Do they love it? well let's start talking by me.
+                        p: a.button(href="") Read More ...
 
 
                  
@@ -170,16 +229,16 @@ html(lang="en")
                 hr
                
             ul
-                li: a(href="") 
+                li: a(href="https://twitter.com/Fatima_YF_") 
                             img(src="images/tw.png", alt="", srcset="")
-                li: a(href="") 
+                li: a(href="https://www.instagram.com/fatima_usf_design/") 
                         img(src="images/inst.png", alt="", srcset="")
-                li: a(href="") 
+                li: a(href="https://medium.com/@f.ucf.eva") 
                         img(src="images/md.png", alt="", srcset="") 
-                li: a(href="") 
+                li: a(href="https://www.linkedin.com/in/fatima-youcef/") 
                         img(src="images/in.png", alt="", srcset="")
                         
-                li: a(href="") 
+                li: a(href="https://github.com/Fatima-Usf") 
                         img(src="images/gt.png", alt="", srcset="")
                 
             br 

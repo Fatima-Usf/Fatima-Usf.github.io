@@ -43,7 +43,7 @@ $(document).ready(function () {
                 });
             }
             if (scroll > $('.blogs').offset().top - $(window).height()) {
-                var offset = Math.min(0, scroll - $('.blogs').offset().top + $(window).height() - 300);
+                var offset = Math.min(0, scroll - $('.blogs').offset().top + $(window).height() - 250);
 
                 $('.post1').css({ 'transform': 'translate(' + offset + 'px, 20px)' });
                 $('.post3').css({ 'transform': 'translate(' + Math.abs(offset) + 'px, 20px)' });
