@@ -1,5 +1,9 @@
 
 $(document).ready(function () {
+    $(".nav-btn").on("click",function(){
+        $("nav ul").toggleClass("showing");
+    })
+    
     $(window).scroll(function(){
         var showidth = $(window).width();
         var scroll = $(this).scrollTop();
