@@ -251,12 +251,14 @@ img {
     color: #597207;
     font-size: 1.8em; }
   .blogs p {
-    text-justify: none; }
+    text-justify: none;
+    line-height: 1.8; }
     .blogs p a {
-      color: #597207; }
+      color: #597207;
+      font-size: 12px; }
   .blogs .post {
     border: 2px solid #e1e1e1;
-    padding: 10px 20px 0;
+    padding: 20px 20px 0;
     position: relative; }
   .blogs .post1 {
     transform: translate(100px, 20px); }
