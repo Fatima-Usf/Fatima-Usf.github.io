@@ -510,8 +510,8 @@ footer ul li {
     margin: 28px; }
 
   .back-first {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../images/back4.png);
-    background-size: auto 510px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../images/back3.jpg);
+    background-size: auto 650px;
     background-position: top center;
     padding-bottom: 0%; }
 
