@@ -120,7 +120,7 @@ img {
   position: relative;
   height: 700px;
   width: 100%;
-  background-image: url(../images/without1.png);
+  background-image: url(../images/without1c.jpg);
   background-size: auto 1020px;
   background-position: top center;
   background-attachment: fixed;
@@ -205,7 +205,7 @@ img {
   position: relative; }
 
 .love {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -510,7 +510,7 @@ footer ul li {
     margin: 28px; }
 
   .back-first {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../images/back3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../images/back3c.jpg);
     background-size: auto 700px;
     background-position: top center;
     padding-bottom: 0%; }
@@ -549,4 +549,13 @@ footer ul li {
     font-size: 12px; }
 
   .modalDialog > div {
-    width: 300px; } }
+    width: 310px;
+    max-height: 420px;
+    overflow-y: scroll; }
+
+  .close {
+    right: -1px;
+    top: -1px; }
+
+  .love {
+    background-color: rgba(0, 0, 0, 0.7); } }
