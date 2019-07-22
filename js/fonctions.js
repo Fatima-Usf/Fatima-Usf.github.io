@@ -10,7 +10,7 @@ $(document).ready(function () {
        // console.log(showidth)
         if (showidth > 864) {
         if (scroll/2) {
-            $('h2').css({
+           /* $('h2').css({
                 'transform': 'skewY(180deg)',
                 'transition': 'transform 2s'
             })
@@ -20,6 +20,19 @@ $(document).ready(function () {
             })+67223
             747
         */
+        $('h2').css({
+            'transform': 'translate(0px, 200px)',
+            'transition': 'transform 2s'
+        })
+        $('.hand').css({
+            'transform': 'translate(-120px, 0px)',
+            'transition': 'transform 2s'
+        })+67223
+        747
+        
+        
+        
+
       
         }
         
@@ -62,7 +75,7 @@ $(document).ready(function () {
    
 });
 
-var myText = "Hello there..";
+var myText = "Hello there..M Fatima Usf";
 
 var myArray = myText.split("");
 

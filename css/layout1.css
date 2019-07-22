@@ -8,20 +8,20 @@ html {
   height: 100vh; }
 
 body {
-  font-family: "Open sans", "sans-serif";
-  background-color: #EFEFEF;
+  background-color: #252c44;
   z-index: 2;
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  color: white; }
 
 nav {
   padding: 8px;
-  background-color: rgba(147, 175, 39, 0.26); }
+  /*background-color: #f767ad; */}
 
 nav.black ul {
-  background-color: rgba(147, 175, 39, 0.26); }
+  background-color: #f767ad; }
 
 .logo {
   float: left;
@@ -30,7 +30,7 @@ nav.black ul {
   margin-top: -29px; }
 
 .logo a {
-  color: #162700;
+  color: #f6b5cb;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 20px;
@@ -54,7 +54,7 @@ nav ul li:last-child {
 nav ul li a {
   display: inline-block;
   outline: none;
-  color: #162700;
+  color: #f6b5cb;
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 1.2px;
@@ -63,33 +63,31 @@ nav ul li a {
   margin-top: -0.6em;
   margin-left: -0.3em; }
   nav ul li a:hover {
-    color: #597207;
+    color: #69b3f5;
     cursor: pointer; }
 
 h1 {
   margin-top: 5%;
-  color: #597207;
-  weight: 300;
+  color: #f6b5cb;
   font-size: 35px; }
 
 h2 {
-  color: #162700;
+  color: #f6b5cb;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 1.5;
   margin-top: -1%;
   margin-left: 54%; }
   h2 em {
-    margin-left: 29%; }
-  h2 space {
-    margin-left: 60%; }
-  h2 span {
-    margin-left: 36%;
-    font-size: 35px; }
+    margin-left: -70%;
+    color: white; }
 
 #container {
-  margin-top: 5.5%;
-  margin-left: 1%; }
+  font-size: 30px;
+  margin-top: 7.5%;
+  margin-left: 1%; 
+  color: #69b3f5;
+}
 
 figure {
   margin: auto; }
@@ -102,11 +100,19 @@ figure {
 .content {
   position: relative;
   z-index: 2;
-  background: #EFEFEF;
-  margin-bottom: 400px; }
+  background: #252c44;
+  margin-bottom: 400px;
+  color: white; 
+  background-image: url(../images/p.png);
+  background-size: auto 180px;
+  background-repeat: no-repeat;
+
+}
+  
   .content article {
-    padding: 100px 0;
-    max-width: 750px;
+    background: #252c44;
+    padding: 100px 3;
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
     justify-content: center; }
@@ -120,8 +126,8 @@ img {
   position: relative;
   height: 700px;
   width: 100%;
-  background-image: url(../images/without1c.jpg);
-  background-size: auto 1020px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(../images/b4.jpg);
+  background-size: auto 150%;
   background-position: top center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -132,23 +138,22 @@ img {
     font-weight: 100;
     font-size: 50px;
     line-height: 1.2;
-    margin-top: 9%;
+    margin-top: 34%;
     margin-left: 7%;
     padding-bottom: 2%; }
 
-/*.logo
- * height: 100%
- * width: 100%
- * background: 
- *     image: url(../images/logo_2.svg)
- *     position: center
- *     size: auto 630px
- *     repeat: no-repeat
- *     position: right bottom
- * position: absolute
- * top: 27%
- * right: -19%
- */
+.cat {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/p.png);
+  background-position: center;
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  top: 9%;
+  right: -3%;
+ }
 /*h2
  * color: green
  * position: absolute
@@ -156,13 +161,13 @@ img {
 .hand {
   height: 100%;
   width: 100%;
-  background-image: url(../images/with.png);
+  background-image: url(../images/logoF.png);
   background-position: center;
-  background-size: auto 950px;
+  background-size: auto 350px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 18%;
-  right: -3%; }
+  top: 24%;
+  right: 30%; }
 
 .logos-pics figure {
   margin-bottom: 20px;
@@ -184,19 +189,19 @@ img {
   .logos-pics figure:hover img {
     transform: scale(1.3); }
 .logos-pics figcaption {
-  color: white;
+  color: #252c44;
   position: absolute;
   bottom: 12px;
   left: -200px;
-  background: #89A628;
+  background: #f6b5cb;
   padding: 2px 7px;
   font-size: 13px;
   transition: all 0.3s ease-in-out; }
 
 .back-two {
   height: 695px;
-  background-image: url(../images/backc.jpg);
-  background-size: auto 700px;
+  background-image: url(../images/b4.jpg);
+  background-size: auto 100%;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -243,24 +248,29 @@ img {
   display: inline-block;
   margin: 9px;
   padding: 7px 12px;
-  background: rgba(89, 114, 7, 0.4);
-  color: #162700;
+  background: #f6b5cb;
+  color: #252c44;
   list-style: none;
   font-size: 1.1em; }
 
 .blogs {
   margin-top: 100px; }
   .blogs #tit {
-    color: #597207;
-    font-size: 1.8em; }
+    color: #c7def1;
+    font-size: 1.3em; }
   .blogs p {
-    text-justify: none;
+    text-justify: newspaper;
     line-height: 1.8; }
     .blogs p a {
-      color: #597207;
-      font-size: 12px; }
+      color: #f6b5cb;
+      font-size: 12px; 
+    }
+    .blogs p a:hover {
+      color: white;
+      font-size: 12px; 
+    }
   .blogs .post {
-    border: 2px solid #e1e1e1;
+    border: 2px solid #f6b5cb;
     padding: 20px 20px 0;
     position: relative; }
   .blogs .post1 {
@@ -269,14 +279,17 @@ img {
     z-index: 2; }
   .blogs .post3 {
     transform: translate(-100px, 20px); }
-
+    
 footer {
-  background: #89A628;
+  background: #f077b2;
   color: white;
   padding: 40px 0;
   bottom: 0;
   width: 100%;
-  z-index: -1; }
+  z-index: -1; 
+  background-image: url(../images/p.png);
+  background-size: auto 180px;
+  background-repeat: no-repeat;}
   footer .footer-stuff {
     max-width: 990px;
     margin: 0 auto; }
@@ -305,6 +318,7 @@ footer ul li {
 .modalDialog {
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
+  color: #252c44;
   top: 0;
   right: 0;
   bottom: 0;
@@ -326,16 +340,16 @@ footer ul li {
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: #fff;
-    background: -moz-linear-gradient(rgba(188, 212, 85, 0.93), #fff);
-    background: -webkit-linear-gradient(rgba(188, 212, 85, 0.93), #fff);
-    background: -o-linear-gradient(rgba(188, 212, 85, 0.93), #fff); }
+    background: -moz-linear-gradient(#f6b5cb, #fff);
+    background: -webkit-linear-gradient(#f6b5cb, #fff);
+    background: -o-linear-gradient(#f6b5cb, #fff); }
     .modalDialog > div h5 {
       color: #162700;
       padding-top: 5px; }
     .modalDialog > div p {
       padding-top: 15px; }
     .modalDialog > div a {
-      color: #AFD120;
+      color: #f6b5cb;
       text-decoration: none;
       font-size: 18px; }
 
@@ -357,7 +371,7 @@ footer ul li {
   -webkit-box-shadow: 1px 1px 3px #000;
   box-shadow: 1px 1px 3px #000; }
   .close:hover {
-    background: #89A628;
+    background: #f6b5cb;
     color: white; }
 
 #clinic > div {
