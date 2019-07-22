@@ -401,7 +401,7 @@ footer ul li {
     nav ul {
       top: 0;
       left: 0;
-      background-color: rgba(147, 175, 39, 0.26);
+      background-color: rgba(101, 109, 214, 0.26);
       width: 100%;
       max-height: 0px;
       padding: 0;
@@ -411,14 +411,14 @@ footer ul li {
 
   nav .nav-wrapper {
     width: 100%;
-    background-color: rgba(147, 175, 39, 0.26); }
+    background-color: rgba(101, 109, 214, 0.26); }
 
   .showing {
     max-height: 20em; }
 
   nav ul {
     list-style: none;
-    background-color: rgba(147, 175, 39, 0.26);
+    background-color: rgba(50, 92, 206, 0.26);
     width: 100%; }
     nav ul li {
       box-sizing: border-box;
@@ -427,7 +427,7 @@ footer ul li {
       text-align: center; }
 
   .nav-wrapper {
-    background-color: rgba(147, 175, 39, 0.26);
+    background-color: rgba(147, 175, 39, 0.3);
     width: 100%; }
 
   .nav-btn {
@@ -445,7 +445,7 @@ footer ul li {
     display: block;
     width: 20px;
     height: 2px;
-    background: #162700;
+    background: #f6b5cb;
     border-radius: 2px;
     margin-left: 14px; }
 
@@ -462,19 +462,19 @@ footer ul li {
     transform: rotate(45deg); }
 
   #nav:checked + .nav-btn i {
-    background: #162700;
+    background: #f6b5cb;
     transition: transform 0.2s ease; }
 
   #nav:checked + .nav-btn i:nth-child(1) {
     transform: translateY(6px) rotate(180deg);
-    background-color: #162700; }
+    background-color: #f6b5cb; }
 
   #nav:checked + .nav-btn i:nth-child(2) {
     opacity: 0; }
 
   #nav:checked + .nav-btn i:nth-child(3) {
     transform: translateY(-6px) rotate(90deg);
-    background-color: #162700; }
+    background-color: #f6b5cb; }
 
   .nav-wrapper ul li:nth-child(1) a {
     transition-delay: 0.2s; }
@@ -495,12 +495,12 @@ footer ul li {
     display: none;
     opacity: 0; }
 
-  h1#container {
+  /*h1#container {
     font-size: 28px;
     text-align: center;
     font-weight: 300;
     color: #162700; }
-
+*/
   h2 {
     font-weight: 400;
     font-size: 25px;
@@ -524,7 +524,7 @@ footer ul li {
     margin: 28px; }
 
   .back-first {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../images/back3c.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/b4.jpg);
     background-size: auto 700px;
     background-position: top center;
     padding-bottom: 0%; }
