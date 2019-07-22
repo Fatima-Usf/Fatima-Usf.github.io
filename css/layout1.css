@@ -513,7 +513,7 @@ footer ul li {
     line-height: 1.8;
     margin-left: 12%; }
     h2 em {
-      margin-left: 5%;
+      margin-left: 2%;
       font-size: 20px; }
     h2 space {
       margin-left: 32%;
@@ -542,7 +542,9 @@ footer ul li {
     padding-bottom: 0%; }
 
   .hand {
-   /* display: none; */}
+    background-size: auto 200px;
+    right: 23%;
+  }
 
   .content {
     padding-top: 10px; }
