@@ -526,6 +526,12 @@ footer ul li {
     margin-top: 5%;
     padding-top: 0%; }
 
+    h1#container {
+      font-size: 28px;
+      text-align: center;
+      font-weight: 300;
+      margin-top: 17.5%;
+     }
   article p {
     margin: 30px; }
 
@@ -581,5 +587,5 @@ footer ul li {
     right: -1px;
     top: -1px; }
 
-  .love {
-    background-color: rgba(0, 0, 0, 0.7); } }
+/*  .love {
+    background-color: rgba(0, 0, 0, 0.7); }*/ }
