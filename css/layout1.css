@@ -103,7 +103,7 @@ figure {
   background: #252c44;
   margin-bottom: 400px;
   color: white; 
-  background-image: url(../images/p.png);
+  background-image: url(../images/p-min.png);
   background-size: auto 180px;
   background-repeat: no-repeat;
 
@@ -126,7 +126,7 @@ img {
   position: relative;
   height: 700px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(../images/b4.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/b7-min.jpg);
   background-size: auto 150%;
   background-position: top center;
   background-attachment: fixed;
@@ -145,7 +145,7 @@ img {
 .cat {
   height: 100%;
   width: 100%;
-  background-image: url(../images/p.png);
+  background-image: url(../images/p-min.png);
   background-position: center;
   background-size: auto 200px;
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@ img {
 .hand {
   height: 100%;
   width: 100%;
-  background-image: url(../images/logoF.png);
+  background-image: url(../images/logoF-min.png);
   background-position: center;
   background-size: auto 350px;
   background-repeat: no-repeat;
@@ -200,7 +200,7 @@ img {
 
 .back-two {
   height: 695px;
-  background-image: url(../images/b4.jpg);
+  background-image: url(../images/b7-min.jpg);
   background-size: auto 100%;
   background-position: top center;
   background-repeat: no-repeat;
@@ -287,7 +287,7 @@ footer {
   bottom: 0;
   width: 100%;
   z-index: -1; 
-  background-image: url(../images/p.png);
+  background-image: url(../images/p-min.png);
   background-size: auto 180px;
   background-repeat: no-repeat;}
   footer .footer-stuff {
@@ -530,7 +530,7 @@ footer ul li {
     margin: 30px; }
 
   .back-first {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/b4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/b7-min.jpg);
     background-size: auto 700px;
     background-position: top center;
     padding-bottom: -19%; }
