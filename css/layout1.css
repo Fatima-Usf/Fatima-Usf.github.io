@@ -8,7 +8,7 @@ html {
   height: 100vh; }
 
 body {
-  background-color: #252c44;
+  background-color: black;
   z-index: 2;
   margin: 0;
   padding: 0;
@@ -100,7 +100,7 @@ figure {
 .content {
   position: relative;
   z-index: 2;
-  background: #252c44;
+  background: black;
   margin-bottom: 400px;
   color: white; 
   background-image: url(../images/p-min.png);
@@ -110,7 +110,7 @@ figure {
 }
   
   .content article {
-    background: #252c44;
+    background: black;
     padding: 100px 3;
     max-width: 850px;
     margin: 0 auto;
